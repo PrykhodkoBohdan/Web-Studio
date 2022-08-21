@@ -1,31 +1,45 @@
 .hero {
     text-align: center;
     margin: 0;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   
     background: var(--dark-background-color);
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../imeges/index/bg-image.jpg);
-    background-size: 1600px 600px;
+      url(../imeges/index/telephone/telephon-bg-image.jpg) ;
+    background-size: 480px 400px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+// ===========ретина дисплей===============
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/index/telephone/telephon-bg-image@2x.jpg) ;
+    }
+  }
 
     &__title{
       margin: 0;
       margin-bottom: 30px;
     
       color: var(--main-background-color);
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.4;
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.61;
+      // font-size: 44px;
+      // line-height: 1.4;
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
+  
 
       &__button{
         border-radius: 4px;
@@ -35,7 +49,7 @@
         border-radius: 4px;
         min-width: 200px;
         height: 50px;
-        padding: 10px 22px;
+        padding: 10px 24px;
       
         background: var(--akcent-text-color);
         color: var(--main-background-color);
@@ -50,3 +64,47 @@
         background-color: var(--interactive-bg-color);
       }
     }
+    // =============Планшет БГ====================
+    @media screen and (min-width: 768px) {
+      .hero{
+      max-width: 768px;
+      background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/index/tablet/tablet-bg-image.jpg) ;
+      background-size: 768px 400px;
+    }
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/index/tablet/tablet-bg-image@2x.jpg) ;
+        background-size: 768px 400px;
+      }
+  
+    }
+    }
+  // =================декстоп БГ=================
+  @media screen and (min-width: 1200px) {
+    .hero{
+      max-width: 1600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-size: 1600px 600px;
+      background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/index/dekstop/bg-image.jpg) ;
+&__title{
+     font-size: 44px;
+      line-height: 1.4;
+}
+   &__button{
+    padding: 10px 32px;
+   }
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+      .hero {
+        background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/index/dekstop/bg-image@2x.jpg) ;
+        background-size: 1600px 600px;
+      }
+  }
+  }

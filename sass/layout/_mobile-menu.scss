@@ -1,0 +1,161 @@
+// 0px - 767px
+@media screen and (max-width: 767px) {
+    .navigation {
+      display: none;
+    }
+    .contact{
+        display: none;
+      }
+
+    .mobile-menu-open {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      line-height: 0;
+    }
+  }
+@media screen and (min-width: 768px){
+    .mobile-menu{
+        display: none;
+        
+    }
+    .mobile-menu-open{
+        display: none;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .mobile-menu{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      max-height: 796px;
+    
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      background-color: var( --main-background-color);
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  
+      opacity: 0;
+      visibility: hidden;
+      pointer-events:none;
+      transition: opacity 250ms linear, visibility 250ms linear;
+
+      &__list{
+        margin-bottom: auto;
+      }
+
+    
+     // ======================мобильные социальные сети====================================
+.mobile-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+
+    &__social{
+        text-decoration: none;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: var(--akcent-text-color);
+ }
+    &__item:not(:last-child)::after{
+        content: "";
+        border: 1px solid rgba(33, 33, 33, 0.2);
+         transform: rotate(90deg);
+        width: 22px;
+        height: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+   
+
+}
+
+&__close-icon:hover{
+fill: var(--akcent-text-color);
+transition: fill var(--decor-cubic);
+      }
+      &__link{
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 1.7;
+letter-spacing: 0.02em;
+text-decoration: none;
+
+color: var(--body-text-color);
+      }
+      &__current{
+        color: #2196F3;
+      }
+&__items:not(:last-child){
+    margin-bottom: 32px;
+}
+      &__number{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        
+        color: #2196F3;
+        text-decoration: none;
+        }
+
+        &__mail{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+text-decoration: none;
+
+color: #757575;
+        }
+    }
+   
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .mobile-menu__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      position: relative;
+      padding-left: 40px;
+      padding-top: 48px;
+      height: 100%;
+      padding-bottom: 48px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    }
+  
+    .mobile-menu__close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      line-height: 0;
+      
+    }  
+    .head{
+      padding: 16px 15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+
+}

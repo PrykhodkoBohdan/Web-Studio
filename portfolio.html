@@ -28,6 +28,11 @@
                     <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open__icon" width="40" height="40">
+                  <use href="./imeges/svg_sprite/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
             <ul class="contact">
                 <li class="contact__item"><a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon"
                             height="12" width="16">
@@ -41,11 +46,41 @@
                         </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+              <button class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="34" height="34">
+                  <use href="./imeges/svg_sprite/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu__list">
+                <li>
+                  <a href="./index.html" class="mobile-menu__link">Студія</a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="mobile-menu__link mobile-menu__current">Портфоліо</a>
+                </li>
+                <li>
+                  <a href="" class="mobile-menu__link">Контакти</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="mobile-menu__items"><a href="tel:+380961111111" class="mobile-menu__number">+38 096 111 11 11</a></li>
+              <li class="mobile-menu__items"><a href="mailto:info@devstudio.com" class="mobile-menu__mail">info@devstudio.com</a></li>
+            </ul>
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><a class="mobile-list__social" href="#">Instagram</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__social" href="#">Twitter</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__social" href="#">Facebook</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__social" href="#">LinkedIn</a></li>
+        </ul>
+            </div>
+        </div>
     </header>
     <!-- Мейн -->
     <main>
         <!-- Галерея -->
-        <section class="section galery">
+        <!-- <section class="section galery">
             <div class="container">
                 <h1 class="visually-hidden"> Наші роботи</h1>
                 <ul class="button">
@@ -188,9 +223,9 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main> -->
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer__nav">
                 <a href="./index.html" class="footer__logo"><span class="logo__text">
@@ -244,9 +279,9 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!-- Форма футера -->
-            <form class="footer-form">
+            <!-- <form class="footer-form">
                 <span class="footer-form__block">
                     <label>
                         <b class="footer-form__email">Підпишіться на розсилку</b>
@@ -259,7 +294,8 @@
                 </span>
             </form>
         </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

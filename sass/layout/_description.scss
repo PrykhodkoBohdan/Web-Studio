@@ -1,16 +1,12 @@
 .description {
- padding-bottom: 0;
+//  padding-bottom: 0;
 
  &__list{
-  display: flex;
   list-style: none;
   margin: 0px;
 }
 
-&__item+
-&__item{
-  margin-left: 30px;
-}
+
 
 &__block{
 
@@ -18,7 +14,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -51,4 +47,37 @@
     font-size: 14px;
     line-height: 1.7;
   }
+}
+
+// ====================Планшет===================
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+.description__list{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.description__item{
+    width: calc((100% - 60px) /2);
+}
+.description__item{
+  margin-right: 30px;
+}
+.description__item:nth-child(even){
+  margin-right: 0;
+}
+}
+
+// ================декстоп=====================
+@media screen and (min-width: 1200px) {
+  .description__list{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+.description__item+
+.description__item{
+  margin: 0;
+  margin-left: 30px;
+}
 }
