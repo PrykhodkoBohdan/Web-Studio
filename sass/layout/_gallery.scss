@@ -4,43 +4,20 @@
   }
 
     &__list{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin: 0;
-    
-      list-style: none;
+   display: block;
     }
-
-    &__list{
-      // gap: 30px;
-      row-gap: 30px;
-      column-gap: 30px;
-
-    }
-
-
     &__border{
       margin: 0;
       padding-left: 24px;
+      padding-right: 24px;
       padding-top: 20px;
       padding-bottom: 20px;
     
       border: 1px solid var(--border-color);
     }
-// &__paragraph:not(:last-child){
-//   margin-bottom: 30px;
-// }
-    &__paragraph{
-      // width: calc(100% / 1);
-      margin: 0;
-     
-    }
-
-    // &__paragraph:nth-last-child(n + 4){
-    //   margin-bottom: 30px;
-    // }
-
+&__paragraph:not(:last-child){
+  margin-bottom: 30px;
+}
     &__link{
       display: inline-block;
       margin: 0;
@@ -58,7 +35,7 @@
     }
 
     &__title{
-      margin: 0;
+      margin-bottom: 4px;
   
       text-decoration-line: none;
       color: var(--body-text-color);
@@ -105,15 +82,24 @@
   // ======================Планшет====================
   @media screen and (min-width: 768px) {
     .galery__paragraph{
+      margin: 0;
       width: calc((100% - 30px) /2);
+     
     }
     .galery__list{
- 
-  display: flex;
+
+      display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
+      justify-content: space-between;
     }
-    
+.galery__border{
+  flex-grow: 1;
+}
+.galery__link{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
   }
 
   // =================Декстоп==================
@@ -121,5 +107,8 @@
     .galery__paragraph{
       width: calc((100% - 60px) /3 );
     }
+    .galery__border{
+      flex-grow: 0;
+    } 
     
   }

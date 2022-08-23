@@ -132,7 +132,7 @@ color: #757575;
         flex-direction: column;
         justify-content: space-between;
       position: relative;
-      padding-left: 40px;
+      padding-left: 25px;
       padding-top: 48px;
       height: 100%;
       padding-bottom: 48px;
@@ -141,13 +141,16 @@ color: #757575;
   
     .mobile-menu__close-btn {
       position: absolute;
-      top: 20px;
+      top: 21px;
       right: 20px;
       background-color: transparent;
       border: none;
       padding: 0;
       line-height: 0;
       
+      display: block;
+      max-width: 100%;
+      height: auto;
     }  
     .head{
       padding: 16px 15px;
