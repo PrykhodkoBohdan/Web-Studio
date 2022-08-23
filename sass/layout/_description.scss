@@ -55,14 +55,15 @@
 .description__list{
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 30px;
+  column-gap: 30px;
 
 }
 .description__item{
     width: calc((100% - 60px) /2);
 }
-.description__item{
-  margin-right: 30px;
-}
+
 .description__item:nth-child(even){
   margin-right: 0;
 }

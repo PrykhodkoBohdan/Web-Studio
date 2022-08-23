@@ -87,11 +87,14 @@
     align-items: flex-end;
     width: auto;
     }
-    .footer-container{
-      align-items: baseline;
-    }
+    // .footer-container{
+    //   align-items: baseline;
+    // }
     .footer-form__description{
       margin-left: 10px;
       margin-top: 0;
+    }
+    .footer-form__input{
+      width: 358px;
     }
   }

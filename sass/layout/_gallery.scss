@@ -1,18 +1,22 @@
 .galery {
-    margin: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  &__img{
+    width: 100%;
+  }
 
     &__list{
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      flex-wrap: nowrap;
       margin: 0;
     
       list-style: none;
     }
 
-    &__list :nth-child(3n){
-      margin-right: 0;
+    &__list{
+      // gap: 30px;
+      row-gap: 30px;
+      column-gap: 30px;
+
     }
 
 
@@ -24,16 +28,18 @@
     
       border: 1px solid var(--border-color);
     }
-
+// &__paragraph:not(:last-child){
+//   margin-bottom: 30px;
+// }
     &__paragraph{
-      width: calc((100% - 60px) /3);
+      // width: calc(100% / 1);
       margin: 0;
-      margin-right: 30px;
+     
     }
 
-    &__paragraph:nth-last-child(n + 4){
-      margin-bottom: 30px;
-    }
+    // &__paragraph:nth-last-child(n + 4){
+    //   margin-bottom: 30px;
+    // }
 
     &__link{
       display: inline-block;
@@ -96,4 +102,24 @@
       
   }
     
-  
+  // ======================Планшет====================
+  @media screen and (min-width: 768px) {
+    .galery__paragraph{
+      width: calc((100% - 30px) /2);
+    }
+    .galery__list{
+ 
+  display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    
+  }
+
+  // =================Декстоп==================
+  @media screen and (min-width: 1200px) {
+    .galery__paragraph{
+      width: calc((100% - 60px) /3 );
+    }
+    
+  }

@@ -2,25 +2,42 @@
 .logo {
   display: inline-block;
   margin-right: 93px;
+
+
   &__text{
     color: var(--akcent-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;   
+    font-size: 24px;
+line-height: 1.16;
+      
   }
   &{  color: var(--body-text-color);
     text-decoration-line: none;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;}
+    font-size: 24px;
+    line-height: 1.16;
+
+  }
   &:focus{
     color: var(--body-text-color);
     text-decoration-line: none;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+
   }
+}
+
+// ==================Dekstop==========
+
+@media screen and (min-width: 1200px) {
+  .logo{
+    font-size: 26px;
+  line-height: 1.2;
+}
+.logo__text{
+      font-size: 26px;
+    line-height: 1.2;
+}
 }

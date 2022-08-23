@@ -8,6 +8,7 @@
       margin: 0;
   
       margin-bottom: 60px;
+      text-align: center;
       }
 
       &__logo{
@@ -18,8 +19,8 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
+        font-size: 24px;
+        line-height: 1.16;
       }
 
       &__list{
@@ -135,7 +136,7 @@ align-items: center;
     }
   }
   // ==================планшет=================
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     .footer-container{
       flex-direction: row;
       flex-wrap: wrap;
@@ -146,12 +147,29 @@ align-items: center;
   // =============декстоп=======================
   @media screen and (min-width: 1200px) {
     .footer-container{
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+      // justify-content: space-between;
       flex-wrap: nowrap;
+      text-align: start;
+      align-items: flex-start;
+      .footer__logo{
+        font-size: 26px;
+        line-height: 1.2;
+      }
     }
     .social{
    margin-left: 70px;
    margin-bottom: 0;
    align-items: flex-start;
-
+    }
+    .footer__nav{
+      display: inline-block;
+      margin-bottom: 0;
+      text-align: start;
+    }
+    .footer__list{
+      align-items: flex-start;
     }
   }

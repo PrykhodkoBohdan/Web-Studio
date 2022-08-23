@@ -12,6 +12,8 @@
     &__title{
       margin: 0;
       margin-bottom: 30px;
+      font-size: 28px;
+line-height: 1.17;
     
       color: var(--body-text-color);
       font-weight: 700;
@@ -128,5 +130,8 @@
     .team__item:first-child{
       margin-bottom: 0;
     }
-
+.team__title{
+  font-size: 36px;
+  line-height: 1.19;
+}
 }

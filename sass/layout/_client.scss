@@ -8,6 +8,8 @@
   padding: 0;
 
   list-style: none;
+
+  gap: 30px;
 }
 
 &__title{
@@ -25,18 +27,7 @@ line-height: 1.17;
   color: var(--body-text-color);
 }
 
-&__item{
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-&__item:nth-child(even){
-  margin-right: 0;
-}
-&__item:nth-child(5){
-margin-bottom: 0;
-}&__item:nth-child(6){
-  margin-bottom: 0;
-  }
+
 &__item{
   width: calc((100% - 30px) / 2);
 }
@@ -44,8 +35,7 @@ margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-// width: 178px;
-  width: 100%;
+  max-width: 210px;
   height: 92px;
 
   border: 1px solid var(--statick-social-color);
@@ -67,18 +57,10 @@ margin-bottom: 0;
   .client__item{
     width: calc((100% - 90px) / 3);
   }
-  .client__item{
-    margin: 0;
-    margin-left: 30px;
-    margin-bottom: 30px;
+  .contact__link{
+    min-width: 226px;
   }
-  .client__item:first-child{
-    margin-left: 0;
-  }
-  .client__item:nth-child(4){
-    margin-bottom: 0;
-    margin-left: 0;
-  }
+
 }
 // ===================декстоп==============
 @media screen and(min-width: 1200px) {
@@ -87,19 +69,7 @@ margin-bottom: 0;
       justify-content: center;
       flex-wrap: nowrap;
   }
-  .client__title{
-      font-size: 36px;
-  line-height: 1.16;
-  }
-  .client__link{
-    width: 170px;
-  }
-  .client__item+
-  .client__item{
-    margin: 0;
-    margin-left: 30px;
-  }
-  .client__item:first-child{
-    margin-bottom: 0;
-  }
+.contact__link{
+  min-width: 178px;
+}
 }

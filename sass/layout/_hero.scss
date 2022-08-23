@@ -3,7 +3,7 @@
     margin: 0;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 480px;
+    max-width: 787px;
     margin-left: auto;
     margin-right: auto;
   
@@ -67,7 +67,7 @@ line-height: 1.61;
     // =============Планшет БГ====================
     @media screen and (min-width: 768px) {
       .hero{
-      max-width: 768px;
+      max-width: 1199px;
       background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/index/tablet/tablet-bg-image.jpg) ;
       background-size: 768px 400px;
     }
