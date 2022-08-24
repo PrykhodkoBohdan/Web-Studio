@@ -486,8 +486,11 @@ button {
   }
 }
 .description__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0px;
+  gap: 30px;
 }
 .description__block {
   display: flex;
@@ -526,8 +529,8 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .description__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
     row-gap: 30px;
     column-gap: 30px;
   }
@@ -545,6 +548,7 @@ button {
   .description__list {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
   }
   .description__item + .description__item {
     margin: 0;
