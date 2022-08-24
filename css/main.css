@@ -75,7 +75,7 @@ button {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 420px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -95,8 +95,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .head {
@@ -508,6 +508,7 @@ button {
   width: 70px;
 }
 .description__title {
+  text-align: center;
   margin: 0;
   margin-bottom: 10px;
   color: var(--body-text-color);
@@ -531,10 +532,13 @@ button {
     column-gap: 30px;
   }
   .description__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
   .description__item:nth-child(even) {
     margin-right: 0;
+  }
+  .description__title {
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -545,6 +549,12 @@ button {
   .description__item + .description__item {
     margin: 0;
     margin-left: 30px;
+  }
+  .description {
+    padding-bottom: 0;
+  }
+  .description__title {
+    text-align: start;
   }
 }
 .lessons {
@@ -612,8 +622,8 @@ button {
   line-height: 1.17;
   color: var(--body-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.19;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 }
 .team__list {
@@ -687,7 +697,7 @@ button {
   }
   .team__item {
     margin-left: 30px;
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
   .team__item:nth-last-child(even) {
     margin-left: 0;
@@ -708,6 +718,7 @@ button {
     margin-bottom: 0;
   }
   .team__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.19;
   }
@@ -751,11 +762,11 @@ button {
   border: 1px solid var(--akcent-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
-  .contact__link {
+  .client__link {
     min-width: 226px;
   }
 }
@@ -764,8 +775,16 @@ button {
     justify-content: center;
     flex-wrap: nowrap;
   }
-  .contact__link {
-    min-width: 178px;
+  .client__item {
+    width: 100%;
+  }
+  .client__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+  .client__link {
+    width: 170px;
   }
 }
 .footer {
@@ -925,6 +944,7 @@ button {
   margin-bottom: 40px;
   flex-wrap: wrap;
   justify-content: flex-start;
+  max-width: 350px;
   list-style: none;
 }
 .button__paragraph {
@@ -954,6 +974,14 @@ button {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 .galery__img {

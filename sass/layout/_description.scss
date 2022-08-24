@@ -31,6 +31,7 @@
 }
 
 &__title{
+  text-align: center;
   margin: 0;
   margin-bottom: 10px;
 
@@ -61,11 +62,14 @@
 
 }
 .description__item{
-    width: calc((100% - 60px) /2);
+    width: calc((100% - 30px) /2);
 }
 
 .description__item:nth-child(even){
   margin-right: 0;
+}
+.description__title{
+  text-align:start;
 }
 }
 
@@ -80,5 +84,11 @@
 .description__item{
   margin: 0;
   margin-left: 30px;
+}
+.description{
+  padding-bottom: 0;
+}
+.description__title{
+  text-align:start;
 }
 }

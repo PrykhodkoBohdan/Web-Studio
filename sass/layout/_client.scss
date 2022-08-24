@@ -53,23 +53,33 @@ line-height: 1.17;
 }
 }
 // =====================планшет=============
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__item{
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
-  .contact__link{
+  .client__link{
     min-width: 226px;
   }
 
 }
 // ===================декстоп==============
-@media screen and(min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .client__list{
 
       justify-content: center;
       flex-wrap: nowrap;
   }
-.contact__link{
-  min-width: 178px;
+
+.client__item{
+  width: 100%;
+}
+  .client__title{
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.16;
+  }
+.client__link{
+  width: 170px;
 }
 }

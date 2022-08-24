@@ -11,7 +11,7 @@
 flex-wrap: wrap;
 justify-content: flex-start;
 
-
+max-width: 350px;
   list-style: none;
 
   // &__item+
@@ -47,11 +47,20 @@ justify-content: flex-start;
 }
 
 // ====================планшет====================
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  {
   .button{
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
+// ==============Десктоп=================
+@media screen and (min-width: 1200px) {
+  .button{
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
   }
   
 }
